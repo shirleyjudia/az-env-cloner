@@ -1,0 +1,35 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+terraform.tfplan
+tfplan
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+*.egg-info/
+
+# Sensitive outputs
+outputs/raw_spec.json
+outputs/preview_plan.json
+outputs/session.json
+outputs/tfplan
+config/clone_selection.yaml
+config/localize.yaml
+config/eventhub_connections.yaml
+
+# Keep samples
+!config/sample_localize.yaml
+!config/sample_clone_selection.yaml
+!outputs/sample_post_provisioning_report.md
+
+# OS
+.DS_Store
+Thumbs.db

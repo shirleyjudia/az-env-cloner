@@ -1,0 +1,18 @@
+instructions: Fill in the values below to control naming transformation.
+naming:
+  change_type: env_only
+  source_env: dev
+  target_env: pat
+  source_project: ''
+  target_project: ''
+  custom_rg_name: ''
+target:
+  location: canadacentral
+  subscription_id: ''
+vnet:
+  new_address_space: 10.1.0.0/16
+  new_subnet_prefix: 10.1.1.0/24
+tags:
+  requested_by: ''
+  project_name: ''
+  env: ''

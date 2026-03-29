@@ -1,0 +1,34 @@
+instructions: Set clone to true to include, false to skip.
+resources:
+  vnets:
+    - name: dev-vnet
+      clone: true
+      migrate_data: false
+  vms:
+    - name: dev-vm01
+      clone: true
+      migrate_data: false
+  app_services:
+    - name: dev-webapp
+      clone: true
+      migrate_data: false
+  function_apps:
+    - name: dev-funcapp
+      clone: true
+      migrate_data: false
+  storage_accounts:
+    - name: devstorageaccount
+      clone: true
+      migrate_data: false
+  cosmosdb_accounts:
+    - name: dev-cosmos-db
+      clone: true
+      migrate_data: false
+  eventhub_namespaces:
+    - name: dev-eventhub-ns
+      clone: true
+      migrate_data: false
+  private_endpoints:
+    - name: dev-pe
+      clone: true
+      migrate_data: false
