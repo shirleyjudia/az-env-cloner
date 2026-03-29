@@ -1,11 +1,11 @@
 # az-env-cloner
 
 Clones Azure Resource Groups across environments using Python + Terraform.
-Point it at a source RG → it discovers, renames, validates and provisions — with your approval before anything touches Azure.
+Point it at a source RG -> it discovers, renames, validates and provisions with your approval before anything touches Azure.
 
 ## What it does
 
-Reads a source Resource Group, transforms resource names (dev → pat, pat → prod, or any combination), provisions identical infrastructure in a new RG using Terraform, auto-updates connection strings, and generates a health report when done.
+Reads a source Resource Group, transforms resource names (dev -> pat, pat -> prod, or any combination), provisions identical infrastructure in a new RG using Terraform, auto-updates connection strings, and generates a health report when done.
 
 **Solves:** Standing up new environments manually takes days. This takes under an hour.
 
@@ -13,7 +13,7 @@ Reads a source Resource Group, transforms resource names (dev → pat, pat → p
 
 ## How it works
 ```
-discover → transform names → your review → terraform plan → your approval → apply → health check
+discover -> transform names -> your review -> terraform plan -> your approval -> apply -> health check
 ```
 
 ---
@@ -26,7 +26,7 @@ VMs · App Services · Function Apps · Storage Accounts · CosmosDB · EventHub
 
 ## Key features
 
-- Names transformed automatically (`pat` → `dev` everywhere, case-preserved)
+- Names transformed automatically (`pat` -> `dev` everywhere, case-preserved)
 - Connection strings auto-updated across subscription
 - Interactive pre-flight checklist before provisioning
 - Post-provisioning health check + troubleshooting report
@@ -63,5 +63,5 @@ python orchestrate.py
 ---
 
 ## Author
-**Shirley Judia** — Cloud & Infrastructure Engineer
+**Shirley Judia** - Cloud & Infrastructure Engineer
 [LinkedIn](https://linkedin.com/in/shirley-judia)
