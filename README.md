@@ -3,6 +3,10 @@
 Clones Azure Resource Groups across environments using Python + Terraform.
 Point it at a source RG → it discovers, renames, validates and provisions — with your approval before anything touches Azure.
 
+## What it does
+
+Reads a source Resource Group, transforms resource names (dev → pat, pat → prod, or any combination), provisions identical infrastructure in a new RG using Terraform, auto-updates connection strings, and generates a health report when done.
+
 **Solves:** Standing up new environments manually takes days. This takes under an hour.
 
 ---
