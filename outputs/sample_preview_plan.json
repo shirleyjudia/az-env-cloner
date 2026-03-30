@@ -1,0 +1,27 @@
+{
+  "source_rg": "sample-dev-rg",
+  "target_rg": "sample-pat-rg",
+  "location": "canadacentral",
+  "tags": {
+    "cloned-from": "sample-dev-rg",
+    "cloned-date": "2026-03-29",
+    "env": "pat",
+    "project-name": "sample",
+    "requested-by": "PM",
+    "created-by": "az-env-cloner",
+    "clone-tool": "az-env-cloner"
+  },
+  "resources": {
+    "vnets": [],
+    "nsgs": [],
+    "vms": [],
+    "app_services": [],
+    "function_apps": [],
+    "storage_accounts": [],
+    "cosmosdb_accounts": [],
+    "eventhub_namespaces": [],
+    "private_endpoints": []
+  },
+  "connection_string_updates": [],
+  "warnings": []
+}

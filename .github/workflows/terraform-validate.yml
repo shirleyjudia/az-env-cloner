@@ -8,7 +8,7 @@ on:
 
 jobs:
   terraform:
-    name: Terraform Format Check
+    name: Terraform Format and Validate
     runs-on: ubuntu-latest
 
     steps:
@@ -22,4 +22,15 @@ jobs:
 
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
+        working-directory: terraform
+
+      - name: Setup sample plan for validation
+        run: cp outputs/sample_preview_plan.json outputs/preview_plan.json
+
+      - name: Terraform Init
+        run: terraform init -backend=false
+        working-directory: terraform
+
+      - name: Terraform Validate
+        run: terraform validate
         working-directory: terraform
