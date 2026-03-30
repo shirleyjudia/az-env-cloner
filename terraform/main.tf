@@ -16,8 +16,8 @@ provider "azurerm" {
 }
 
 locals {
-  plan = jsondecode(file("${path.module}/../outputs/preview_plan.json"))
-  tags = local.plan.tags
+  plan = try(jsondecode(file("${path.module}/../outputs/preview_plan.json")), null)
+  tags = try(local.plan.tags, {})
 }
 
 # ─────────────────────────────────────────
