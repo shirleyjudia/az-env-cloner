@@ -24,7 +24,6 @@ jobs:
         run: |
             terraform fmt -recursive
             terraform fmt -check -diff -recursive || true
-        working-directory: terraform
 
       - name: Terraform Init
         run: terraform init -backend=false
